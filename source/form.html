@@ -27,27 +27,27 @@
     <main class="page-main">
       <h1 class="page-main__title">Подбор</h1>
       <p class="page-main__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      <section class="program">
-        <form class="program-form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset>
-            <legend class="part__title visually-hidden">Личные данные:</legend>
+      <section class="food-program">
+        <form class="food-program__form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="personal">
+            <legend class="personal__title visually-hidden">Личные данные:</legend>
             <ul class="personal__list">
               <li class="personal__item">
-                <input class="personal__input" type="text" name="name" id="name" value="Барсик">
+                <input class="personal__input" type="text" name="name" id="name" placeholder="Барсик">
                 <label for="name">Имя:<sup>*</sup></label>
               </li>
               <li class="personal__item">
-                <input class="personal__input" type="text" name="weight" id="weight" value="7">
+                <input class="personal__input" type="text" name="weight" id="weight" placeholder="7">
                 <label for="weight">Вес(КГ):<sup>*</sup></label>
               </li>
               <li class="personal__item">
-                <input class="personal__input" type="text" name="age" id="age" value="7">
+                <input class="personal__input" type="text" name="age" id="age" placeholder="7">
                 <label for="age">Возраст(ЛЕТ):<sup>*</sup></label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend class="part__title visually-hidden">Выбор программы</legend>
+          <fieldset class="program">
+            <legend class="program__title visually-hidden">Выбор программы</legend>
             <ul class="program__list">
               <li class="program__item">
                 <input class="program__input" type="radio" name="program" id="slim" checked>
@@ -63,25 +63,25 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend class="part__title">Контактные данные(владельца кота)</legend>
+          <fieldset class="owner">
+            <legend class="owner__title">Контактные данные(владельца кота)</legend>
             <ul class="owner__list">
               <li class="owner__item">
-                <input class="owner__input" type="email" name="mail" id="mail" value="kuklachev@gmail.com">
+                <input class="owner__input" type="email" name="mail" id="mail" placeholder="kuklachev@gmail.com">
                 <label for="mail">E-mail<sup>*</sup></label>
               </li>
               <li class="owner__item">
-                <input class="owner__input" type="number" name="phone" id="phone" value="8 (960) 900-60-90">
-                <label for="mail">Телефон:<sup>*</sup></label>
+                <input class="owner__input" type="number" name="phone" id="phone" placeholder="8 (960) 900-60-90">
+                <label for="phone">Телефон:<sup>*</sup></label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend class="part__title">Комментарий</legend>
+          <fieldset class="comments">
+            <legend class="comments__title">Комментарий</legend>
             <textarea name="comments" rows="8">Расскажите обо всех повадках кота</textarea>
           </fieldset>
-          <fieldset>
-            <legend class="part__title">Дополнительно</legend>
+          <fieldset class="more">
+            <legend class="more__title">Дополнительно</legend>
             <ul class="more__list">
               <li class="more__item">
                 <input class="more__input" type="checkbox" name="sugar" id="sugar" checked>
@@ -101,43 +101,41 @@
               </li>
             </ul>
           </fieldset>
-          <button class="form__button button" type="submit">Отправить заявку</button>
+          <button class="food-program__form-button button" type="submit">Отправить заявку</button>
           <p class="important"><sup>*</sup>— Обязательные поля</p>
         </form>
       </section>
-      <section class="contacts">
-        <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-        <map class="contacts__map">
-          <img class="contacts__map-image" src="#" width="320" height="400" alt="Изображение адреса организации на карте">
-        </map>
-      </section>
     </main>
     <footer class="page-footer">
+      <section class="footer-contacts">
+        <p class="footer-contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+        <address class="footer-contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <map class="footer-contacts__map">
+          <img class="footer-contacts__map-image" src="#" width="320" height="400" alt="Изображение адреса организации на карте">
+        </map>
+      </section>
       <div class="footer-logo">
         <a class="footer-logo__link">
           <img class="footer-logo__text" src="#" width="128" height="24" alt="Кэт Энерджи">
         </a>
       </div>
-      <div class="footer-social">
-        <ul class="footer-social__list">
-          <li class="footer-social__item footer-social__item--vk">
-            <a class="footer-social__link" href="vk.com">Вконтакте</a>
-          </li>
-          <li class="footer-social__item footer-social__item--instagram">
-            <a class="footer-social__link" href="vk.com">Инстаграм</a>
-          </li>
-          <li class="footer-social__item footer-social__item--fb">
-            <a class="footer-social__link" href="vk.com">Фейсбук</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="footer-social">
+        <li class="footer-social__item footer-social__item--vk">
+          <a class="footer-social__link" href="vk.com">Вконтакте</a>
+        </li>
+        <li class="footer-social__item footer-social__item--instagram">
+          <a class="footer-social__link" href="vk.com">Инстаграм</a>
+        </li>
+        <li class="footer-social__item footer-social__item--fb">
+          <a class="footer-social__link" href="vk.com">Фейсбук</a>
+        </li>
+      </ul>
       <div class="footer-copyright">
-        <p class="copyright__text">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <p class="footer-copyright__text">
+          <a class="footer-copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="copyright__image" src="#" width="27" height="34" alt="Логотип HTML Academy">
+        <a class="footer-copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="footer-copyright__image" src="#" width="27" height="34" alt="Логотип HTML Academy">
         </a>
       </div>
     </footer>
