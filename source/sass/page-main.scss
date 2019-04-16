@@ -1,0 +1,29 @@
+.page-main__background {
+  padding-top: 26px;
+  padding-bottom: 166px;
+
+  background-color: $green;
+  background-size: 319px 305px;
+  background-image: url('../img/index-background-mobile@1x.jpg');
+  background-repeat: no-repeat;
+}
+
+.page-main__title {
+  margin: 0 0 25px 0;
+
+  @include oswald-regular(36px, 36px, $white);
+}
+
+.page-main__text {
+  margin: 0;
+  padding-bottom: 28px;
+
+  @include oswald-regular(14px, 14px, $white);
+  @include uppercase();
+}
+
+.page-main__button {
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+}

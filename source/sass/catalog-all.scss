@@ -1,0 +1,37 @@
+.catalog-all {
+  padding: 26px 20px 25px;
+
+  border-bottom: 1px solid $border-color;
+}
+
+.catalog-all__title {
+  margin: 25px 0 10px 0;
+
+  @include oswald-regular(16px, 20px, $black);
+  @include uppercase();
+}
+
+.catalog-all__text {
+  margin: 0 0 20px 0;
+
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog-all__button {
+  padding-left: 94px;
+  padding-right: 94px;
+
+  background-color: $light-grey;
+
+  @include oswald-regular(16px, 20px, $grey);
+  @include uppercase();
+}
+
+.catalog-all__button:hover {
+  background-color: $light-grey--down;
+}
+
+.catalog-all__button:active {
+  color: #b9b9b9;
+}

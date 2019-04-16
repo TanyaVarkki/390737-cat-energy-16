@@ -1,0 +1,12 @@
+.form-main__title {
+  margin: 30px 20px;
+
+  @include oswald-regular(36px, 60px, $black);
+}
+
+.form-main__text {
+  margin: 0 20px 38px;
+
+  @include oswald-regular(14px, 18px, $black);
+  @include uppercase();
+}

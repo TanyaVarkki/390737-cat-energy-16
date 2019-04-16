@@ -1,0 +1,19 @@
+.description {
+  padding: 22px 20px 42px;
+}
+
+.description__title {
+  margin: 0;
+  margin-bottom: 23px;
+
+  @include oswald-regular(36px, 60px, $black);
+}
+
+.description__list {
+  @include list-style();
+}
+
+.description__item {
+  margin-bottom: 20px;
+  padding: 4px 0 6px 80px;
+}

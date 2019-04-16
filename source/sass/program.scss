@@ -1,0 +1,42 @@
+.program {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.program__item {
+  margin-bottom: 20px;
+  padding-top: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 22px;
+
+  background-color: $light-grey;
+}
+
+.program__item-title {
+  margin: 0 0 24px 0;
+  padding-top: 8px;
+  padding-bottom: 9px;
+
+  @include oswald-regular(24px, 37px, $black);
+  @include uppercase();
+}
+
+.program__item-text {
+  margin: 0;
+}
+
+.program__item-link {
+  display: block;
+  margin-top: 22px;
+  padding-top: 20px;
+
+  @include oswald-regular(16px, 16px, $black);
+  @include uppercase();
+
+  border-top: 1px solid #d9d9d9;
+}
+
+.program__item-link:active {
+  color: $black--down;
+}

@@ -1,0 +1,59 @@
+.example {
+  background-color: $light-grey;
+  padding: 19px 20px 44px;
+}
+
+.example__title {
+  margin: 0;
+  margin-bottom: 21px;
+
+  @include oswald-regular(36px, 60px, $black);
+}
+
+.example__text {
+  margin: 0;
+}
+
+.example__table {
+  margin-top: 27px;
+  margin-bottom: 38px;
+}
+
+.example__table-value--big {
+  padding-top: 14px;
+  padding-bottom: 16px;
+
+  @include oswald-regular(24px, 24px, $black);
+  @include uppercase();
+  text-align: center;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 5%;
+}
+
+.example__expenses {
+  @include oswald-regular(14px, 20px, $black);
+  @include uppercase();
+}
+
+.example__scale {
+  margin-top: 34px;
+  padding-left: 44px;
+  padding-right: 38px;
+}
+
+.example__scale-text {
+  @include oswald-regular(16px, 20px, $black);
+  @include uppercase();
+  text-decoration: underline;
+  text-decoration-color: $black--down;
+}
+
+.example__scale-text:hover {
+  text-decoration: underline;
+  text-decoration-color: $black--hover;
+}
+
+.example__scale-text:active {
+  text-decoration: none;
+}

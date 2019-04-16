@@ -1,0 +1,27 @@
+.site-list {
+  @include list-style();
+}
+
+.site-list__item {
+  padding-top: 22px;
+  padding-bottom: 24px;
+
+  border-bottom: 1px solid $border-color;
+}
+
+.site-list__item a {
+  @include oswald-medium(20px, 20px, $black);
+  @include uppercase();
+}
+
+.site-list__item a:hover {
+  color: $black--hover;
+}
+
+.site-list__item a:active {
+  color: $black--down;
+}
+
+.site-list__item--active a {
+  text-decoration: underline;
+}

@@ -1,0 +1,159 @@
+fieldset {
+  border: none;
+}
+
+.personal {
+  padding: 0 20px 8px;
+  border-bottom: 1px solid $border-color;
+}
+
+.personal__list {
+  @include list-style();
+}
+
+.personal__item {
+  margin-bottom: 14px;
+
+  @include oswald-regular(16px, 18px, $grey);
+  @include uppercase();
+}
+
+.personal__input {
+  margin: 0;
+  padding: 13px 17px 14px 17px;
+
+  @include oswald-regular(16px, 18px, $grey);
+  @include uppercase();
+
+  outline: none;
+}
+
+.personal__input:hover {
+  border-color: #cdcdcd;
+}
+
+.personal__input:active {
+  border-color: $black;
+}
+
+.program {
+  padding: 21px 20px;
+
+  border-bottom: 1px solid $border-color;
+}
+
+.program__list {
+  @include list-style();
+}
+
+.program__item {
+  margin: 0 0 23px 0;
+  padding: 0 0 0 47px;
+
+  background-color: $white;
+
+  @include oswald-regular(16px, 18px, $grey);
+  @include uppercase();
+}
+
+.program__item:last-child {
+  margin-bottom: 0;
+}
+
+.program__item:active {
+  opacity: 0.3;
+}
+
+.owner {
+  padding: 0 20px;
+}
+
+.owner__title {
+  margin: 30px 0 30px 0;
+
+  @include oswald-regular(24px, 24px, $black);
+}
+
+.owner__list {
+  @include list-style();
+}
+
+.owner__item {
+  margin-bottom: 15px;
+  @include oswald-regular(16px, 18px, $grey);
+  @include uppercase();
+}
+
+.owner__input {
+  margin: 0;
+  padding: 13px 17px 14px 17px;
+
+  @include oswald-regular(16px, 18px, $grey);
+  @include uppercase();
+}
+
+.owner__input:hover {
+  border-color: #cdcdcd;
+}
+
+.owner__input:active {
+  border-color: $black;
+}
+
+.comments {
+  padding: 17px 20px 30px 20px;
+}
+
+.comments__title {
+  margin: 0 0 30px 0;
+
+  @include oswald-regular(24px, 24px, $black);
+}
+
+textarea {
+  margin: 0;
+  padding: 15px;
+
+  @include oswald-regular(16px, 18px, $grey);
+  @include uppercase();
+}
+
+.more {
+  padding: 0 20px;
+}
+
+.more__title {
+  margin: 0 0 30px 0;
+
+  @include oswald-regular(24px, 24px, $black);
+}
+
+.more__list {
+  @include list-style();
+}
+
+.more__item {
+  margin-bottom: 28px;
+  padding-left: 47px;
+
+  @include oswald-regular(16px, 18px, $grey);
+  @include uppercase();
+}
+
+.more__item:active {
+  opacity: 0.3;
+}
+
+.food-program__form-button {
+  width: 100%;
+  margin: 0 20px;
+
+  @include oswald-regular(16px, 20px, $white);
+  @include uppercase();
+}
+
+.food-program__important {
+  margin: 22px 20px 33px 20px;
+  font-size: 14px;
+  line-height: 16px;
+}
