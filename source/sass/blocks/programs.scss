@@ -1,9 +1,9 @@
-.program {
+.programs {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.program__item {
+.programs__item {
   margin-bottom: 20px;
   padding-top: 22px;
   padding-left: 20px;
@@ -13,7 +13,7 @@
   background-color: $light-grey;
 }
 
-.program__item-title {
+.programs__item-title {
   margin: 0 0 24px 0;
   padding-top: 8px;
   padding-bottom: 9px;
@@ -22,11 +22,11 @@
   @include uppercase();
 }
 
-.program__item-text {
+.programs__item-text {
   margin: 0;
 }
 
-.program__item-link {
+.programs__item-link {
   display: block;
   margin-top: 22px;
   padding-top: 20px;
@@ -37,6 +37,6 @@
   border-top: 1px solid #d9d9d9;
 }
 
-.program__item-link:active {
+.programs__item-link:active {
   color: $black--down;
 }

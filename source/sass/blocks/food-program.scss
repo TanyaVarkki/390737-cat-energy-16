@@ -1,0 +1,17 @@
+.food-program__fieldset {
+  border: none;
+}
+
+.food-program__form-button {
+  width: 100%;
+  margin: 0 20px;
+
+  @include oswald-regular(16px, 20px, $white);
+  @include uppercase();
+}
+
+.food-program__important {
+  margin: 22px 20px 33px 20px;
+  font-size: 14px;
+  line-height: 16px;
+}

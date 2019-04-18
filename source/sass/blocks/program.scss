@@ -1,0 +1,27 @@
+.program {
+  padding: 21px 20px;
+
+  border-bottom: 1px solid $border-color;
+}
+
+.program__list {
+  @include list-style();
+}
+
+.program__item {
+  margin: 0 0 23px 0;
+  padding: 0 0 0 47px;
+
+  background-color: $white;
+
+  @include oswald-regular(16px, 18px, $grey);
+  @include uppercase();
+}
+
+.program__item:last-child {
+  margin-bottom: 0;
+}
+
+.program__item:active {
+  opacity: 0.3;
+}
