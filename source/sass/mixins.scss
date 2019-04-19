@@ -1,0 +1,26 @@
+@mixin oswald-regular($font-size, $line-height, $color) {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin oswald-medium($font-size, $line-height, $color) {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin uppercase() {
+  text-transform: uppercase;
+}
+
+@mixin list-style() {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

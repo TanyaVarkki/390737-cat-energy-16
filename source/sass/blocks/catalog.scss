@@ -1,0 +1,39 @@
+.catalog__list {
+  @include list-style();
+}
+
+.catalog__item {
+  padding: 24px 22px;
+
+  border-bottom: 1px solid $border-color;
+}
+
+.catalog__title {
+  margin: 0;
+  margin-bottom: 16px;
+
+  @include oswald-regular(16px, 20px, $black);
+  @include uppercase();
+}
+
+.catalog__table-value {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog__table-value--left {
+  text-align: left;
+}
+
+.catalog__table-value--right {
+  text-align: right;
+}
+
+.catalog__item-button {
+  margin-top: 22px;
+  padding-left: 112px;
+  padding-right: 108px;
+
+  @include oswald-regular(16px, 20px, $white);
+  @include uppercase();
+}

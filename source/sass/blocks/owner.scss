@@ -1,0 +1,36 @@
+.owner {
+  padding: 0 20px;
+}
+
+.owner__title {
+  margin: 30px 0 30px 0;
+
+  @include oswald-regular(24px, 24px, $black);
+}
+
+.owner__list {
+  @include list-style();
+}
+
+.owner__item {
+  margin-bottom: 15px;
+
+  @include oswald-regular(16px, 18px, $grey);
+  @include uppercase();
+}
+
+.owner__input {
+  margin: 0;
+  padding: 13px 17px 14px 17px;
+
+  @include oswald-regular(16px, 18px, $grey);
+  @include uppercase();
+}
+
+.owner__input:hover {
+  border-color: #cdcdcd;
+}
+
+.owner__input:active {
+  border-color: $black;
+}

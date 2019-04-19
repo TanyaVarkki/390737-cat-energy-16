@@ -1,0 +1,33 @@
+.personal {
+  padding: 0 20px 8px;
+  border-bottom: 1px solid $border-color;
+}
+
+.personal__list {
+  @include list-style();
+}
+
+.personal__item {
+  margin-bottom: 14px;
+
+  @include oswald-regular(16px, 18px, $grey);
+  @include uppercase();
+}
+
+.personal__input {
+  margin: 0;
+  padding: 13px 17px 14px 17px;
+
+  @include oswald-regular(16px, 18px, $grey);
+  @include uppercase();
+
+  outline: none;
+}
+
+.personal__input:hover {
+  border-color: #cdcdcd;
+}
+
+.personal__input:active {
+  border-color: $black;
+}

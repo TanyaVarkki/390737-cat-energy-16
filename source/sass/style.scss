@@ -1,0 +1,34 @@
+// переменные, примеси
+@import "variables.scss";
+@import "mixins.scss";
+// базовые стили
+@import "base.scss";
+// кнопки
+@import "buttons.scss";
+// хедер главной
+@import "page-header.scss";
+@import "site-list.scss";
+// содержание главной
+@import "page-main.scss";
+@import "programs.scss";
+@import "description.scss";
+@import "example.scss";
+// футер
+@import "page-footer.scss";
+@import "footer-contacts.scss";
+@import "footer-logo.scss";
+@import "footer-social.scss";
+@import "footer-copyright.scss";
+// содержание каталога
+@import "inner-main.scss";
+@import "catalog.scss";
+@import "catalog-all.scss";
+@import "extra.scss";
+// форма
+@import "form-main.scss";
+@import "food-program.scss";
+@import "personal.scss";
+@import "program.scss";
+@import "owner.scss";
+@import "comments.scss";
+@import "more.scss";

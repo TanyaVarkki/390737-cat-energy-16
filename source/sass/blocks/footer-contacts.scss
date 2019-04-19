@@ -1,0 +1,21 @@
+.footer-contacts__block {
+  padding: 30px 20px 28px;
+}
+
+.footer-contacts__block--index {
+  background-color: $white;
+}
+
+.footer-contacts__text {
+  margin: 0;
+
+  @include oswald-regular(16px, 20px, $black);
+  @include uppercase();
+}
+
+.footer-contacts__address {
+  color: $black;
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+}
