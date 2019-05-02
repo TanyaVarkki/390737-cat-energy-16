@@ -3,7 +3,6 @@
 }
 
 .food-program__form-button {
-  width: 100%;
   margin: 0 20px;
 
   @include oswald-regular(16px, 20px, $white);
@@ -12,6 +11,32 @@
 
 .food-program__important {
   margin: 22px 20px 33px 20px;
+
   font-size: 14px;
   line-height: 16px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .food-program__block {
+    display: flex;
+    align-items: center;
+  }
+
+  .food-program__form-button {
+    width: 284px;
+    margin: 0 60px 0 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .food-program__column {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .food-program__form-button {
+    width: 570px;
+    margin: 0 80px 0 110px;
+  }
 }

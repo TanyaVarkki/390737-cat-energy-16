@@ -1,4 +1,7 @@
 .footer-contacts__block {
+  display: flex;
+  justify-content: space-between;
+
   padding: 30px 20px 28px;
 }
 
@@ -18,4 +21,34 @@
   font-size: 14px;
   line-height: 20px;
   font-style: normal;
+}
+
+@media (min-width: $tablet-width) {
+  .footer-contacts__text {
+    width: 165px;
+  }
+
+  .footer-contacts__address {
+    width: 153px;
+
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-contacts {
+    position: relative;
+  }
+
+  .footer-contacts__block {
+    position: absolute;
+    top: 96px;
+    left: 110px;
+
+    box-sizing: border-box;
+
+    width: 570px;
+
+    background-color: $white;
+  }
 }

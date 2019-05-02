@@ -9,9 +9,34 @@
 }
 
 .comments__text {
+  box-sizing: border-box;
+
+  width: 280px;
   margin: 0;
-  padding: 15px;
+  padding: 14px;
 
   @include oswald-regular(16px, 18px, $grey);
   @include uppercase();
+
+  border: 1px solid $border-color;
+}
+
+@media (min-width: $tablet-width) {
+  .comments {
+    padding: 0 70px;
+  }
+
+  .comments__text {
+    width: 628px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comments {
+    padding: 0 110px;
+  }
+
+  .comments__text {
+    width: 1220px;
+  }
 }

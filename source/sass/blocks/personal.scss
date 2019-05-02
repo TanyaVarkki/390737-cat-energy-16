@@ -1,4 +1,6 @@
 .personal {
+  box-sizing: border-box;
+
   padding: 0 20px 8px;
   border-bottom: 1px solid $border-color;
 }
@@ -8,6 +10,9 @@
 }
 
 .personal__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 14px;
 
   @include oswald-regular(16px, 18px, $grey);
@@ -15,13 +20,17 @@
 }
 
 .personal__input {
-  margin: 0;
+  flex-grow: 2;
+
+  margin: 0 0 0 15px;
   padding: 13px 17px 14px 17px;
 
   @include oswald-regular(16px, 18px, $grey);
   @include uppercase();
 
   outline: none;
+
+  border: 1px solid $border-color;
 }
 
 .personal__input:hover {
@@ -30,4 +39,19 @@
 
 .personal__input:active {
   border-color: $black;
+}
+
+@media (min-width: $tablet-width) {
+  .personal {
+    margin: 0 50px;
+
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .personal {
+    width: 570px;
+    margin-left: 90px;
+  }
 }

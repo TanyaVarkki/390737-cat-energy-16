@@ -1,3 +1,4 @@
+
 .programs {
   padding-left: 20px;
   padding-right: 20px;
@@ -39,4 +40,43 @@
 
 .programs__item-link:active {
   color: $black--down;
+}
+
+@media (min-width: $tablet-width) {
+  .programs {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .programs__item {
+    margin-bottom: 30px;
+    padding-top: 74px;
+    padding-left: 52px;
+    padding-right: 284px;
+    padding-bottom: 56px;
+  }
+
+  .programs__item-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .programs__item-link {
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 110px;
+  }
+
+  .programs__item {
+    box-sizing: border-box;
+
+    width: 570px;
+  }
 }

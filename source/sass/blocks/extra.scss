@@ -31,6 +31,11 @@
   @include uppercase();
 }
 
+.extra__info {
+  display: flex;
+  justify-content: space-between;
+}
+
 .extra__quantity {
   font-size: 14px;
   line-height: 14px;
@@ -45,8 +50,6 @@
 
 .extra__button {
   margin-top: 15px;
-  padding-left: 112px;
-  padding-right: 108px;
 
   @include oswald-regular(16px, 20px, $white);
   @include uppercase();
@@ -63,10 +66,91 @@
 
 .extra__text {
   margin: 0;
-  padding-top: 189px;
-  padding-bottom: 44px;
+  padding: 189px 60px 44px 60px;
 
   color: $white;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .extra {
+    padding: 0 30px;
+  }
+
+  .extra__list {
+    padding: 0 38px;
+  }
+
+  .extra__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .extra__info {
+    width: 285px;
+  }
+
+  .extra__button {
+    width: 634px;
+  }
+
+  .extra__column--order {
+    background-size: 708px 200px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .extra__text {
+    padding: 38px 90px 67px 423px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra {
+    margin-bottom: 90px;
+    padding: 0 110px;
+  }
+
+  .extra__catalog-title {
+    border: none;
+  }
+
+  .extra__columns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .extra__list {
+    padding: 0;
+  }
+
+  .extra__title {
+    width: 245px;
+  }
+
+  .extra__button {
+    width: 245px;
+  }
+
+  .extra__column--catalog {
+    width: 895px;
+  }
+
+  .extra__column--order {
+    width: 245px;
+
+    background-size: 245px 289px;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .extra__text {
+    padding: 189px 39px 39px 39px;
+    text-align: left;
+  }
 }
