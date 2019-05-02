@@ -25,3 +25,18 @@
 .program__item:active {
   opacity: 0.3;
 }
+
+@media (min-width: $tablet-width) {
+  .program {
+    margin: 0 70px;
+
+    border: 1px solid $border-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program {
+    width: 570px;
+    margin-right: 110px;
+  }
+}

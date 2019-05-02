@@ -17,3 +17,34 @@
   margin-bottom: 20px;
   padding: 4px 0 6px 80px;
 }
+
+.description__text {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .description__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .description__item {
+    width: 324px;
+    padding: 0;
+  }
+
+  .description__text {
+    width: 243px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description {
+    padding: 0 110px;
+  }
+
+  .description__item {
+    width: 245px;
+  }
+}

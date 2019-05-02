@@ -10,3 +10,33 @@
   @include oswald-regular(14px, 18px, $black);
   @include uppercase();
 }
+
+@media (min-width: $tablet-width) {
+  .form-main {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .form-main__title {
+    margin: 65px 30px 40px;
+  }
+
+  .form-main__text {
+    margin: 0 70px 65px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-main {
+    width: 1440px;
+    margin: 0 auto;
+  }
+
+  .form-main__title {
+    margin: 70px 110px 40px;
+  }
+
+  .form-main__text {
+    margin: 0 110px 65px;
+  }
+}

@@ -1,0 +1,42 @@
+.main-nav__button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__button {
+    display: none;
+  }
+
+  .main-nav__list {
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 439px;
+
+    @include oswald-medium(18px, 24px, $black);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    box-sizing: border-box;
+
+    width: 50%;
+    padding-left: 130px;
+
+    background-color: $green;
+  }
+
+  .main-nav__list {
+    width: 482px;
+  }
+}

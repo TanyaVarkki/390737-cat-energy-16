@@ -1,8 +1,28 @@
 .footer-social {
-  margin: 0 20px;
-  padding: 22px 0;
+  display: flex;
+  justify-content: center;
 
   @include list-style();
+}
 
-  border-bottom: 1px solid #d9d9d9;
+.footer-social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 42px;
+  height: 30px;
+  padding: 17px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .footer-social {
+    width: 236px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-social {
+    width: 400px;
+  }
 }

@@ -1,3 +1,8 @@
+.inner-main {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .inner-main__title {
   margin: 0;
   padding: 22px 22px 23px 22px;
@@ -5,4 +10,28 @@
   @include oswald-regular(36px, 60px, $black);
 
   border-bottom: 1px solid $border-color;
+}
+
+@media (min-width: $tablet-width) {
+  .inner-main {
+    width: 768px;
+    margin: 0;
+  }
+
+  .inner-main__title {
+    padding: 0 30px;
+
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .inner-main {
+    width: 1440px;
+    margin: 0;
+  }
+
+  .inner-main__title {
+    padding: 0 110px;
+  }
 }

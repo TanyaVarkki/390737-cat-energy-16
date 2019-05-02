@@ -23,3 +23,19 @@
 .more__item:active {
   opacity: 0.3;
 }
+
+@media (min-width: $tablet-width) {
+  .more {
+    padding: 0 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .more {
+    padding: 0 110px;
+  }
+
+  .more__list {
+    display: flex;
+  }
+}
