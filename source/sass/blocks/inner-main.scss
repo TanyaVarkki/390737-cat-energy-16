@@ -20,6 +20,10 @@
 
   .inner-main__title {
     padding: 0 30px;
+    margin-top: 60px;
+    margin-bottom: 95px;
+
+    @include oswald-regular(60px, 60px, $black);
 
     border: none;
   }
@@ -32,6 +36,7 @@
   }
 
   .inner-main__title {
+    margin: 60px 0 90px;
     padding: 0 110px;
   }
 }

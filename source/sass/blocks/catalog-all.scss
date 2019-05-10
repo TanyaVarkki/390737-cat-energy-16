@@ -13,6 +13,7 @@
 
   @include oswald-regular(16px, 20px, $black);
   @include uppercase();
+  text-align: center;
 }
 
 .catalog-all__text {
@@ -20,12 +21,10 @@
 
   font-size: 12px;
   line-height: 16px;
+  text-align: center;
 }
 
 .catalog-all__button {
-  padding-left: 94px;
-  padding-right: 94px;
-
   background-color: $light-grey;
 
   @include oswald-regular(16px, 20px, $grey);
@@ -45,13 +44,44 @@
     box-sizing: border-box;
     width: 324px;
     min-height: 432px;
+    padding: 55px 38px 40px;
 
     border: 1px solid $border-color;
+  }
+
+  .catalog-all svg {
+    transform: scale(1.5);
+  }
+
+  .catalog-all__title {
+    margin: 55px 0 28px;
+    padding: 0 55px;
+
+    @include oswald-regular(20px, 20px, $black);
+  }
+
+  .catalog-all__text {
+    margin-bottom: auto;
+    padding: 0 39px;
+
+    font-size: 16px;
+  }
+
+  .catalog-all__button {
+    width: 100%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog-all {
     width: 245px;
+  }
+
+  .catalog-all__title {
+    padding: 0;
+  }
+
+  .catalog-all__text {
+    padding: 0;
   }
 }

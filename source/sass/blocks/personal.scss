@@ -23,7 +23,7 @@
   flex-grow: 2;
 
   margin: 0 0 0 15px;
-  padding: 13px 17px 14px 17px;
+  padding: 13px 17px 14px 18px;
 
   @include oswald-regular(16px, 18px, $grey);
   @include uppercase();
@@ -44,8 +44,15 @@
 @media (min-width: $tablet-width) {
   .personal {
     margin: 0 50px;
+    padding-bottom: 0;
 
     border: none;
+  }
+
+  .personal__item {
+    margin-bottom: 20px;
+
+    @include oswald-regular(20px, 20px, $grey);
   }
 }
 
@@ -53,5 +60,9 @@
   .personal {
     width: 570px;
     margin-left: 90px;
+  }
+
+  .personal__item:last-child {
+    margin-bottom: 0;
   }
 }

@@ -19,10 +19,15 @@
 
   .form-main__title {
     margin: 65px 30px 40px;
+
+    @include oswald-regular(60px, 60px, $black);
   }
 
   .form-main__text {
     margin: 0 70px 65px;
+    padding-right: 289px;
+
+    @include oswald-regular(20px, 30px, $black);
   }
 }
 
@@ -38,5 +43,6 @@
 
   .form-main__text {
     margin: 0 110px 65px;
+    padding-right: 895px;
   }
 }

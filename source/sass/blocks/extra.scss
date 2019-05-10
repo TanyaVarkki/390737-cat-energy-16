@@ -4,6 +4,8 @@
 }
 
 .extra__catalog-title {
+  position: relative;
+
   margin: 0;
   padding-top: 31px;
   padding-bottom: 33px;
@@ -11,6 +13,19 @@
   @include oswald-regular(24px, 24px, $black);
 
   border-bottom: 1px solid #cdcdcd;
+}
+
+.extra__catalog-title::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  right: -20px;
+
+  width: 54px;
+  height: 3px;
+
+  background-color: $green;
 }
 
 .extra__list {
@@ -56,11 +71,28 @@
 }
 
 .extra__column--order {
+  position: relative;
+
+  min-height: 289px;
   margin: 40px 0 36px 0;
 
   background-color: $green;
   background-size: 280px 289px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.extra__column--order::before {
+  content: "";
+
+  position: absolute;
+  top: 65px;
+  left: 113px;
+
+  width: 55px;
+  height: 60px;
+
+  background-image: url("../img/icon-gift.svg");
   background-repeat: no-repeat;
 }
 
@@ -79,6 +111,33 @@
     padding: 0 30px;
   }
 
+  .extra__catalog-title {
+    margin-left: 38px;
+    padding: 0 0 76px;
+
+    @include oswald-regular(36px, 36px, $black);
+  }
+
+  .extra__catalog-title::before {
+    content: "";
+
+    position: absolute;
+    top: 20px;
+    left: -68px;
+
+    width: 30px;
+    height: 3px;
+
+    background-color: $green;
+  }
+
+  .extra__catalog-title::after {
+    top: 20px;
+    right: -30px;
+
+    width: 327px;
+  }
+
   .extra__list {
     padding: 0 38px;
   }
@@ -88,24 +147,63 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+
+    padding: 30px 0 28px;
+  }
+
+  .extra__title {
+    margin: 0;
+
+    @include oswald-regular(20px, 20px, $black);
   }
 
   .extra__info {
-    width: 285px;
+    justify-content: flex-end;
+  }
+
+  .extra__quantity {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .extra__price {
+    width: 95px;
+
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .extra__button {
     width: 634px;
+    margin-top: 26px;
   }
 
   .extra__column--order {
+    min-height: 200px;
+    margin: 70px 0 78px;
+
     background-size: 708px 200px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     background-repeat: no-repeat;
   }
 
+  .extra__column--order::before {
+    content: "";
+
+    position: absolute;
+    top: 65px;
+    left: 90px;
+
+    width: 55px;
+    height: 60px;
+
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+  }
+
   .extra__text {
-    padding: 38px 90px 67px 423px;
+    padding: 73px 123px 67px 423px;
+
     text-align: left;
   }
 }
@@ -117,7 +215,23 @@
   }
 
   .extra__catalog-title {
+    margin: 0;
+
     border: none;
+  }
+
+  .extra__catalog-title::before {
+    top: 20px;
+    left: -150px;
+
+    width: 70px;
+  }
+
+  .extra__catalog-title::after {
+    top: 20px;
+    right: -120px;
+
+    width: 958px;
   }
 
   .extra__columns {
@@ -129,12 +243,21 @@
     padding: 0;
   }
 
+  .extra__item {
+    padding: 16px 0 17px;
+  }
+
+  .extra__item:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
+
   .extra__title {
     width: 245px;
   }
 
   .extra__button {
     width: 245px;
+    margin: 0;
   }
 
   .extra__column--catalog {
@@ -143,6 +266,7 @@
 
   .extra__column--order {
     width: 245px;
+    margin: 0;
 
     background-size: 245px 289px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
@@ -151,6 +275,6 @@
 
   .extra__text {
     padding: 189px 39px 39px 39px;
-    text-align: left;
+    text-align: center;
   }
 }

@@ -1,8 +1,4 @@
 .footer-copyright {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
   width: 280px;
   margin: 0 auto;
   padding: 23px 0;
@@ -12,12 +8,16 @@
 
 .footer-copyright__text {
   margin: 0;
-}
 
-.footer-copyright__link {
   font-size: 16px;
   line-height: 16px;
   color: $grey;
+}
+
+.footer-copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer-copyright__link:hover {
@@ -30,9 +30,17 @@
   opacity: 0.3;
 }
 
+.footer-copyright__link:hover path,
+.footer-copyright__link:active path {
+  fill: $green;
+}
+
 @media (min-width: $tablet-width) {
   .footer-copyright {
+    box-sizing: border-box;
+
     width: 236px;
+    padding-left: 75px;
 
     border: none;
   }
@@ -40,6 +48,9 @@
 
 @media (min-width: $desktop-width) {
   .footer-copyright {
+    box-sizing: border-box;
+
     width: 400px;
+    padding-left: 235px;
   }
 }

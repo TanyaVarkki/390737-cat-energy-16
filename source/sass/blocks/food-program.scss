@@ -21,11 +21,23 @@
   .food-program__block {
     display: flex;
     align-items: center;
+
+    margin-bottom: 72px;
   }
 
   .food-program__form-button {
     width: 284px;
     margin: 0 60px 0 70px;
+    padding: 14px 6px 15px;
+
+    @include oswald-regular(20px, 20px, $white);
+  }
+
+  .food-program__important {
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 

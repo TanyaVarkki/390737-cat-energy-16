@@ -15,6 +15,19 @@
   padding: 17px 0;
 }
 
+.footer-social__link:hover path,
+.footer-social__link:active path {
+  fill: $green;
+}
+
+.footer-social__link:hover {
+  opacity: 0.8;
+}
+
+.footer-social__link:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .footer-social {
     width: 236px;

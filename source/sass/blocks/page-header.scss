@@ -11,9 +11,14 @@
 .page-header__logo {
   display: block;
 
-  padding: 11px 20px 16px 20px;
+  padding: 11px 20px 17px 20px;
 
   border-bottom: 1px solid $border-color;
+}
+
+.page-header__logo-image {
+  width: 191px;
+  height: 38px;
 }
 
 .page-header__logo-image:hover {
@@ -29,13 +34,16 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 
     width: 708px;
     margin: 0 auto;
+    padding-top: 16px;
   }
 
   .page-header__logo {
     width: 192px;
+    padding: 0;
 
     border-bottom: none;
   }
@@ -43,7 +51,11 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
+    box-sizing: border-box;
+
     width: 1440px;
+    height: 108px;
+    padding-top: 54px;
   }
 
   .page-header__logo {

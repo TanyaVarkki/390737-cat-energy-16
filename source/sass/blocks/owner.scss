@@ -3,9 +3,24 @@
 }
 
 .owner__title {
+  position: relative;
+
   margin: 30px 0 30px 0;
 
   @include oswald-regular(24px, 24px, $black);
+}
+
+.owner__title::after {
+  content: "";
+
+  position: absolute;
+  top: 12px;
+  right: -24px;
+
+  width: 100px;
+  height: 3px;
+
+  background-color: $green;
 }
 
 .owner__list {
@@ -13,6 +28,8 @@
 }
 
 .owner__item {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,11 +40,39 @@
   @include uppercase();
 }
 
+.owner__item--mail::before {
+  content: "";
+
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  width: 17px;
+  height: 13px;
+
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+}
+
+.owner__item--phone::before {
+  content: "";
+
+  position: absolute;
+  top: 13px;
+  right: 13px;
+
+  width: 20px;
+  height: 20px;
+
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+}
+
 .owner__input {
   flex-grow: 2;
 
   margin: 0 0 0 10px;
-  padding: 13px 17px 14px 17px;
+  padding: 13px 33px 14px 17px;
 
   @include oswald-regular(16px, 18px, $grey);
   @include uppercase();
@@ -47,11 +92,54 @@
   .owner {
     padding: 0 70px;
   }
+
+  .owner__title {
+    margin: 80px 0 70px;
+    @include oswald-regular(36px, 36px, $black);
+  }
+
+  .owner__title::after {
+    top: 22px;
+    right: -70px;
+
+    width: 145px;
+  }
+
+  .owner__title::before {
+    content: "";
+
+    position: absolute;
+    top: 22px;
+    left: -65px;
+
+    width: 30px;
+    height: 3px;
+
+    background-color: $green;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .owner {
     padding: 0 110px;
+  }
+
+  .owner__title {
+    margin: 65px 0 70px;
+  }
+
+  .owner__title::after {
+    top: 22px;
+    right: -110px;
+
+    width: 778px;
+  }
+
+  .owner__title::before {
+    top: 22px;
+    left: -110px;
+
+    width: 70px;
   }
 
   .owner__list {
