@@ -11,7 +11,7 @@
 
 .page-main__background {
   padding-top: 26px;
-  padding-bottom: 166px;
+  padding-bottom: 140px;
 
   background-color: $green;
   background-size: cover;
@@ -39,6 +39,7 @@
   width: 280px;
   height: 270px;
   margin-top: -139px;
+  margin-bottom: 5px;
 }
 
 .page-main__button {
@@ -57,12 +58,12 @@
 
     align-items: flex-start;
 
-    padding-left: 120px;
+    padding-left: 117px;
     padding-bottom: 530px;
   }
 
   .page-main__background {
-    padding: 60px 0 0 0;
+    padding: 55px 0 0 0;
 
     background-color: transparent;
     background-size: contain;
@@ -71,14 +72,14 @@
 
   .page-main__title {
     width: 427px;
-    margin-bottom: 28px;
+    margin-bottom: 41px;
 
     @include oswald-regular(60px, 60px, $black);
     text-align: left;
   }
 
   .page-main__text {
-    padding-bottom: 47px;
+    padding-bottom: 48px;
 
     @include oswald-regular(20px, 20px, $black);
     text-align: left;
@@ -114,11 +115,12 @@
   }
 
   .page-main__header {
-    padding-bottom: 270px;
+    padding-left: 190px;
+    padding-bottom: 268px;
   }
 
   .page-main__background {
-    padding-top: 110px;
+    padding-top: 114px;
   }
 
   .page-main__background::before {
@@ -137,9 +139,17 @@
     z-index: -2;
   }
 
+  .page-main__text {
+    padding-bottom: 53px;
+  }
+
+  .page-main__button {
+    width: 243px;
+  }
+
   .page-main__image {
-    top: 35px;
-    left: 450px;
+    top: 32px;
+    left: 587px;
 
     z-index: -1;
 

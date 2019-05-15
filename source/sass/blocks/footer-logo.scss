@@ -4,7 +4,7 @@
 
   width: 280px;
   margin: 0 auto;
-  padding: 39px 0 32px 0;
+  padding: 0 0 29px 0;
 
   border-bottom: 1px solid #d9d9d9;
 }
@@ -20,8 +20,10 @@
 @media (min-width: $tablet-width) {
   .footer-logo {
     justify-content: flex-start;
+    align-items: center;
 
     width: 236px;
+    padding: 9px 0 0 0;
 
     border: none;
   }

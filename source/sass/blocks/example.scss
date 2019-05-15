@@ -1,5 +1,5 @@
 .example {
-  padding: 19px 20px 44px;
+  padding: 19px 20px 32px;
 
   background-color: $light-grey;
   background-size: cover;
@@ -7,7 +7,7 @@
 
 .example__title {
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 22px;
 
   @include oswald-regular(36px, 60px, $black);
 }
@@ -22,7 +22,7 @@
   justify-content: space-between;
   align-items: center;
 
-  margin-top: 27px;
+  margin-top: 24px;
   margin-bottom: 20px;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .example__big {
-  width: 124px;
+  width: 122px;
   padding-top: 14px;
   padding-bottom: 16px;
 
@@ -47,19 +47,27 @@
 
 .example__small {
   width: 55px;
-  margin-top: -13px;
+  margin-top: -8px;
   padding: 0 16px;
 
+  font-size: 12px;
+  line-height: 12px;
   text-align: center;
   background-color: $light-grey;
 }
 
 .example__expenses {
-  margin-bottom: 44px;
+  margin-bottom: 34px;
 
   @include oswald-regular(14px, 20px, $black);
   @include uppercase();
   text-align: center;
+}
+
+.example__image {
+  width: 311px;
+  height: 232px;
+  margin-left: -16px;
 }
 
 .example__scale {
@@ -92,8 +100,8 @@
   position: relative;
 
   width: 84px;
-  height: 14px;
-  margin: 0 20px;
+  height: 13px;
+  margin: -2px 20px 0;
 
   background-color: $white;
 
@@ -118,12 +126,12 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    padding: 0;
+    padding: 43px 0 0 0;
     background-color: $white;
   }
 
   .example__title {
-    margin-bottom: 60px;
+    margin-bottom: 64px;
     margin-left: 30px;
 
     @include oswald-regular(60px, 60px, $black);
@@ -136,7 +144,11 @@
 
   .example__info {
     padding: 0 30px;
-    margin-bottom: 230px;
+    margin-bottom: 228px;
+  }
+
+  .example__numbers {
+    margin-top: 52px;
   }
 
   .example__cell {
@@ -144,7 +156,7 @@
   }
 
   .example__big {
-    width: 162px;
+    width: 160px;
     padding-top: 16px;
     padding-bottom: 18px;
 
@@ -153,7 +165,7 @@
 
   .example__small {
     width: auto;
-    margin-top: -10px;
+    margin-top: -8px;
     padding: 0 8px;
 
     background-color: $white;
@@ -163,6 +175,7 @@
 
   .example__expenses {
     width: 180px;
+    padding-top: 38px;
 
     @include oswald-regular(20px, 30px, $black);
     text-align: right;
@@ -175,8 +188,13 @@
   }
 
   .example__grey {
-    padding-bottom: 70px;
+    padding-top: 333px;
+    padding-bottom: 68px;
     background-color: $light-grey;
+  }
+
+  .example__image {
+    display: none;
   }
 
   .example__scale {
@@ -186,6 +204,8 @@
   }
 
   .example__scale-text {
+    padding-bottom: 6px;
+
     @include oswald-regular(20px, 20px, $black);
   }
 
@@ -200,8 +220,8 @@
   }
 
   .example__scale-line::before {
-    top: -13px;
-    left: 205px;
+    top: -15px;
+    left: 200px;
 
     width: 30px;
     height: 30px;
@@ -217,7 +237,8 @@
     content: "";
 
     position: absolute;
-    left: 218px;
+    top: -2px;
+    left: 212px;
 
     width: 7px;
     height: 7px;
@@ -237,8 +258,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .example {
+    padding-top: 41px;
+  }
+
   .example__title {
     margin-left: 110px;
+    margin-bottom: 74px;
   }
 
   .example__wrapper {
@@ -250,6 +276,10 @@
     background-color: $light-grey;
   }
 
+  .example__numbers {
+    margin-top: 67px;
+  }
+
   .example__info {
     width: 450px;
     padding: 0;
@@ -258,10 +288,26 @@
 
   .example__small {
     background-color: $light-grey;
-}
+  }
 
   .example__column {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .example__expenses {
+    display: flex;
+    justify-content: space-between;
+
+    width: 327px;
+    padding-top: 9px;
+  }
+
+  .example__grey {
+    padding-top: 262px;
+  }
+
+  .example__scale {
+    padding: 0;
   }
 }

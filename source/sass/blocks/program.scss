@@ -1,5 +1,5 @@
 .program {
-  padding: 21px 20px 21px 67px;
+  padding: 26px 20px 28px 64px;
 
   border-bottom: 1px solid $border-color;
 }
@@ -9,7 +9,7 @@
 }
 
 .program__item {
-  margin: 0 0 23px 0;
+  margin: 0 0 24px 0;
 
   background-color: $white;
 
@@ -52,7 +52,6 @@
   border: 8px solid $white;
   border-radius: 50%;
   box-shadow: 0 0 0 1px #dedede;
-
 }
 
 .program__input:checked + label::before {
@@ -62,26 +61,30 @@
 @media (min-width: $tablet-width) {
   .program {
     margin: 0 70px;
-    padding: 35px 90px;
+    padding: 33px 87px;
 
     border: 1px solid $border-color;
   }
 
   .program__item {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
 
     @include oswald-regular(20px, 20px, $grey);
   }
 
   .program__input + label::before {
+    left: -53px;
+    top: -3px;
+
     transform: scale(1.3);
   }
 }
 
 @media (min-width: $desktop-width) {
   .program {
+    box-sizing: border-box;
     width: 570px;
     margin: 0 110px 0 0;
-    padding: 30px 90px;
+    padding: 34px 86px 0;
   }
 }

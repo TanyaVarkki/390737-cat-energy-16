@@ -12,7 +12,8 @@
 
   width: 42px;
   height: 30px;
-  padding: 17px 0;
+  padding: 18px 0 14px;
+  margin: 0 6px;
 }
 
 .footer-social__link:hover path,
@@ -31,6 +32,10 @@
 @media (min-width: $tablet-width) {
   .footer-social {
     width: 236px;
+  }
+
+  .footer-social__link svg {
+    transform: scale(1.4);
   }
 }
 

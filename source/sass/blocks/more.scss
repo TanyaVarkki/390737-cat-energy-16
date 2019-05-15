@@ -1,11 +1,11 @@
 .more {
-  padding: 0 20px;
+  padding: 0 17px;
 }
 
 .more__title {
   position: relative;
 
-  margin: 0 0 30px 0;
+  margin: 0 0 39px 0;
 
   @include oswald-regular(24px, 24px, $black);
 }
@@ -15,7 +15,7 @@
 
   position: absolute;
   top: 12px;
-  right: -24px;
+  right: -20px;
 
   width: 136px;
   height: 3px;
@@ -28,7 +28,7 @@
 }
 
 .more__item {
-  margin-bottom: 28px;
+  margin-bottom: 24px;
   padding-left: 47px;
 
   @include oswald-regular(16px, 18px, $grey);
@@ -83,11 +83,12 @@
 
 @media (min-width: $tablet-width) {
   .more {
-    padding: 0 70px;
+    padding: 0 0 0 67px;
   }
 
   .more__title {
-    margin: 70px 0 50px;
+    margin: 61px 0 65px;
+
     @include oswald-regular(36px, 36px, $black);
   }
 
@@ -103,7 +104,7 @@
 
     position: absolute;
     top: 22px;
-    left: -65px;
+    left: -68px;
 
     width: 30px;
     height: 3px;
@@ -119,20 +120,27 @@
   .more__item {
     box-sizing: border-box;
 
-    width: 310px;
-    margin-bottom: 55px;
+    width: 344px;
+    margin-bottom: 52px;
+    padding-left: 59px;
 
     @include oswald-regular(20px, 20px, $grey);
   }
 
   .more__input + label::before {
+    left: -54px;
+
     transform: scale(1.2);
+  }
+
+  .more__input:checked + label::after {
+    left: -48px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .more {
-    padding: 0 110px;
+    padding: 0 0 0 108px;
   }
 
   .more__list {
@@ -154,7 +162,7 @@
   }
 
   .more__item {
-    width: 300px;
+    width: 324px;
+    margin-bottom: 62px;
   }
-
 }

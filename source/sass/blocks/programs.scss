@@ -5,11 +5,11 @@
 }
 
 .programs__item {
-  margin-bottom: 20px;
-  padding-top: 37px;
+  margin-bottom: 19px;
+  padding-top: 31px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 22px;
+  padding-bottom: 21px;
 
   background-color: $light-grey;
 }
@@ -17,8 +17,8 @@
 .programs__item-title {
   position: relative;
 
-  margin: 0 0 33px 0;
-  padding-left: 73px;
+  margin: 0 0 29px 0;
+  padding-left: 71px;
 
   @include oswald-regular(24px, 37px, $black);
   @include uppercase();
@@ -28,8 +28,8 @@
   content: "";
 
   position: absolute;
-  top: -10px;
-  left: 0;
+  top: -7px;
+  left: 2px;
 
   width: 51px;
   height: 51px;
@@ -43,7 +43,7 @@
   content: "";
 
   position: absolute;
-  top: -10px;
+  top: -7px;
   left: 9px;
   width: 35px;
   height: 49px;
@@ -75,7 +75,7 @@
   display: block;
 
   margin-top: 22px;
-  padding-top: 20px;
+  padding-top: 19px;
 
   @include oswald-regular(16px, 16px, $black);
   @include uppercase();
@@ -88,7 +88,7 @@
 
   position: absolute;
   bottom: 2px;
-  left: 95px;
+  left: 96px;
 
   width: 24px;
   height: 11px;
@@ -115,20 +115,25 @@
 
   .programs__item {
     margin-bottom: 30px;
-    padding-top: 74px;
+    padding-top: 75px;
     padding-left: 52px;
     padding-right: 284px;
-    padding-bottom: 56px;
+    padding-bottom: 62px;
+  }
+
+  .programs__item--pro {
+    padding-right: 312px;
   }
 
   .programs__item-title {
+    margin-bottom: 26px;
     padding: 0;
 
     @include oswald-regular(36px, 37px, $black);
   }
 
   .programs__item-title::before {
-    top: 10px;
+    top: 18px;
     left: 394px;
 
     width: 200px;
@@ -136,7 +141,7 @@
   }
 
   .programs__item--slim .programs__item-title::after {
-    top: 0;
+    top: 5px;
     left: 425px;
 
     width: 140px;
@@ -157,6 +162,8 @@
   }
 
   .programs__item-link {
+    margin-top: 37px;
+
     @include oswald-regular(20px, 20px, $black);
 
     border: none;
@@ -165,7 +172,6 @@
   .programs__item-link::after {
     bottom: 4px;
     left: 130px;
-
   }
 }
 
@@ -183,12 +189,12 @@
 
     width: 570px;
     margin: 0;
-    padding: 70px 52px 60px;
+    padding: 76px 52px 60px;
   }
 
   .programs__item-title {
-    padding-left: 165px;
-    margin-bottom: 70px;
+    padding-left: 162px;
+    margin-bottom: 74px;
   }
 
   .programs__item-title::before {
@@ -213,5 +219,9 @@
 
     width: 134px;
     height: 56px;
+  }
+
+  .programs__item-link {
+    margin-top: 11px;
   }
 }

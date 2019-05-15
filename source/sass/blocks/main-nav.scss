@@ -1,6 +1,6 @@
 .main-nav__button {
   position: absolute;
-  top: 20px;
+  top: 23px;
   right: 20px;
 
   width: 24px;
@@ -13,7 +13,7 @@
   outline: none;
 }
 
-.main-nav--closed .main-nav__button{
+.main-nav--closed .main-nav__button {
   background-image: url("../img/icon-mobile-menu.svg");
 }
 

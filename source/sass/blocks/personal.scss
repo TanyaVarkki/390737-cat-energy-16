@@ -1,7 +1,7 @@
 .personal {
   box-sizing: border-box;
 
-  padding: 0 20px 8px;
+  padding: 0 17px 9px;
   border-bottom: 1px solid $border-color;
 }
 
@@ -12,7 +12,7 @@
 .personal__item {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   margin-bottom: 14px;
 
   @include oswald-regular(16px, 18px, $grey);
@@ -23,7 +23,7 @@
   flex-grow: 2;
 
   margin: 0 0 0 15px;
-  padding: 13px 17px 14px 18px;
+  padding: 11px 17px 14px 18px;
 
   @include oswald-regular(16px, 18px, $grey);
   @include uppercase();
@@ -43,8 +43,8 @@
 
 @media (min-width: $tablet-width) {
   .personal {
-    margin: 0 50px;
-    padding-bottom: 0;
+    margin: 0 50px 52px;
+    padding: 0 18px 0 21px;
 
     border: none;
   }
@@ -54,12 +54,24 @@
 
     @include oswald-regular(20px, 20px, $grey);
   }
+
+  .personal__input {
+    margin-left: 19px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .personal__input[placeholder] {
+    @include oswald-regular(20px, 20px, $grey);
+  }
 }
 
 @media (min-width: $desktop-width) {
   .personal {
-    width: 570px;
-    margin-left: 90px;
+    box-sizing: border-box;
+
+    width: 608px;
+    margin: 0 0 0 90px;
   }
 
   .personal__item:last-child {

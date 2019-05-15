@@ -1,7 +1,7 @@
 .footer-copyright {
   width: 280px;
   margin: 0 auto;
-  padding: 23px 0;
+  padding: 21px 0;
 
   border-top: 1px solid #d9d9d9;
 }
@@ -35,12 +35,16 @@
   fill: $green;
 }
 
+.footer-copyright__link svg {
+  transform: scale(1.5);
+}
+
 @media (min-width: $tablet-width) {
   .footer-copyright {
     box-sizing: border-box;
 
     width: 236px;
-    padding-left: 75px;
+    padding: 0 0 0 72px;
 
     border: none;
   }
