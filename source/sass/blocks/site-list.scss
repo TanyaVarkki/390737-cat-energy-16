@@ -23,8 +23,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .site-list__item {
+    padding: 0;
+
+    border-bottom: none;
+  }
+
   .site-list__item a {
-    padding-bottom: 3px;
+    padding-bottom: 7px;
 
     @include oswald-medium(18px, 24px, $black);
   }
@@ -32,18 +38,19 @@
   .site-list__item--active a {
     border-bottom: 2px solid $green;
   }
-
-  .site-list__item {
-    border-bottom: none;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .site-list__item a {
+    @include oswald-medium(20px, 24px, $black);
+  }
+
+  .site-list__item-index a {
     @include oswald-medium(20px, 24px, $white);
   }
 
-  .site-list__item--active a {
+  .site-list__item--active-index a {
+    @include oswald-medium(20px, 24px, $white);
     border-bottom: 2px solid $white;
   }
 }

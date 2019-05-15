@@ -11,10 +11,10 @@
 
 .page-main__background {
   padding-top: 26px;
-  padding-bottom: 166px;
+  padding-bottom: 140px;
 
   background-color: $green;
-  background-size: 319px 305px;
+  background-size: cover;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
 }
@@ -36,7 +36,10 @@
 }
 
 .page-main__image {
+  width: 280px;
+  height: 270px;
   margin-top: -139px;
+  margin-bottom: 5px;
 }
 
 .page-main__button {
@@ -51,43 +54,106 @@
   }
 
   .page-main__header {
+    position: relative;
+
     align-items: flex-start;
 
-    padding-left: 120px;
+    padding-left: 117px;
+    padding-bottom: 530px;
   }
 
   .page-main__background {
-    background-color: $white;
+    padding: 55px 0 0 0;
+
+    background-color: transparent;
+    background-size: contain;
     background-image: none;
   }
 
   .page-main__title {
     width: 427px;
+    margin-bottom: 41px;
 
     @include oswald-regular(60px, 60px, $black);
     text-align: left;
   }
 
   .page-main__text {
+    padding-bottom: 48px;
+
     @include oswald-regular(20px, 20px, $black);
     text-align: left;
   }
 
+  .page-main__image {
+    position: absolute;
+    top: 260px;
+    left: 0;
+
+    z-index: -1;
+
+    width: 709px;
+    height: 609px;
+    margin: 0 auto;
+  }
+
   .page-main__button {
     width: 248px;
+    height: 52px;
+    margin: 0;
+
+    @include oswald-regular(20px, 20px, $white);
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-main {
+    position: relative;
+
     width: 1440px;
     margin: 0 auto;
   }
 
   .page-main__header {
+    padding-left: 190px;
+    padding-bottom: 268px;
+  }
+
+  .page-main__background {
+    padding-top: 114px;
+  }
+
+  .page-main__background::before {
+    content: "";
+
+    position: absolute;
+    top: -108px;
+    right: 0;
+
+    width: 720px;
+    height: 696px;
+
     background-image: url("../img/index-background-desktop@1x.jpg");
-    background-size: 720px 696px;
     background-repeat: no-repeat;
-    background-position: right;
+
+    z-index: -2;
+  }
+
+  .page-main__text {
+    padding-bottom: 53px;
+  }
+
+  .page-main__button {
+    width: 243px;
+  }
+
+  .page-main__image {
+    top: 32px;
+    left: 587px;
+
+    z-index: -1;
+
+    width: 552px;
+    height: 499px;
   }
 }

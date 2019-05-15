@@ -1,10 +1,10 @@
 .description {
-  padding: 22px 20px 42px;
+  padding: 0 20px 23px;
 }
 
 .description__title {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 26px;
 
   @include oswald-regular(36px, 60px, $black);
 }
@@ -14,8 +14,44 @@
 }
 
 .description__item {
-  margin-bottom: 20px;
+  position: relative;
+
+  margin-bottom: 16px;
   padding: 4px 0 6px 80px;
+}
+
+.description__item::before {
+  content: "";
+
+  position: absolute;
+  top: 2px;
+  left: 0;
+
+  width: 60px;
+  height: 60px;
+
+  background-color: $green;
+  background-repeat: no-repeat;
+}
+
+.description__item--benefit::before {
+  background-image: url("../img/advantage-leaf@1x.png");
+  background-position: center;
+}
+
+.description__item--simple::before {
+  background-image: url("../img/advantage-powder@1x.png");
+  background-position: center;
+}
+
+.description__item--food::before {
+  background-image: url("../img/advantage-dining@1x.png");
+  background-position: center;
+}
+
+.description__item--time::before {
+  background-image: url("../img/advantage-clock@1x.png");
+  background-position: center;
 }
 
 .description__text {
@@ -23,6 +59,18 @@
 }
 
 @media (min-width: $tablet-width) {
+  .description {
+    padding: 14px 30px 17px;
+
+    border-bottom: 1px solid $border-color;
+  }
+
+  .description__title {
+    margin-bottom: 24px;
+
+    @include oswald-regular(60px, 60px, $black);
+  }
+
   .description__list {
     display: flex;
     justify-content: space-between;
@@ -30,21 +78,63 @@
   }
 
   .description__item {
+    box-sizing: border-box;
+
     width: 324px;
-    padding: 0;
+    padding: 116px 0 50px 0;
+    margin: 45px 0 34px;
+  }
+
+  .description__item::before {
+    width: 80px;
+    height: 80px;
+  }
+
+  .description__item::after {
+    content: "";
+
+    @include oswald-regular(280px, 280px, $light-grey);
+
+    position: absolute;
+    bottom: -6px;
+    left: 114px;
+
+    z-index: -1;
+  }
+
+  .description__item--benefit::after {
+    content: "1";
+  }
+
+  .description__item--simple::after {
+    content: "2";
+  }
+
+  .description__item--food::after {
+    content: "3";
+  }
+
+  .description__item--time::after {
+    content: "4";
   }
 
   .description__text {
-    width: 243px;
+    width: 245px;
+
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .description {
     padding: 0 110px;
+
+    border: none;
   }
 
   .description__item {
     width: 245px;
+    padding-top: 114px;
   }
 }
