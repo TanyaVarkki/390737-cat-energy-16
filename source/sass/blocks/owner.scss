@@ -78,6 +78,7 @@
   @include uppercase();
 
   border: 1px solid $border-color;
+  outline: none;
 }
 
 .owner__input:hover {
@@ -86,6 +87,10 @@
 
 .owner__input:active {
   border-color: $black;
+}
+
+.owner__input:not(:valid) {
+  border-color: red;
 }
 
 @media (min-width: $tablet-width) {
