@@ -50,7 +50,7 @@
 
   .page-header__logo-image {
     width: 173px;
-    height: 58px;
+    height: auto;
   }
 }
 
@@ -65,5 +65,10 @@
 
   .page-header__logo {
     margin-left: 110px;
+  }
+
+  .page-header__logo-image {
+    width: 202px;
+    height: auto;
   }
 }

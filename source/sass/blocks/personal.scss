@@ -33,6 +33,10 @@
   border: 1px solid $border-color;
 }
 
+.personal__input:not(:valid) {
+  border-color: red;
+}
+
 .personal__input:hover {
   border-color: #cdcdcd;
 }
