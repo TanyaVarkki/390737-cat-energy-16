@@ -16,8 +16,8 @@
   margin: 0 6px;
 }
 
-.footer-social__link:hover path,
-.footer-social__link:active path {
+.footer-social__link:hover .footer-social__icon,
+.footer-social__link:active .footer-social__icon {
   fill: $green;
 }
 
@@ -29,12 +29,16 @@
   opacity: 0.3;
 }
 
+.footer-social__icon {
+  fill: #6a6a6a;
+}
+
 @media (min-width: $tablet-width) {
   .footer-social {
     width: 236px;
   }
 
-  .footer-social__link svg {
+  .footer-social__link .footer-social__icon {
     transform: scale(1.4);
   }
 }
