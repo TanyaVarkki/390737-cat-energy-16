@@ -30,12 +30,16 @@
   opacity: 0.3;
 }
 
-.footer-copyright__link:hover path,
-.footer-copyright__link:active path {
+.footer-copyright__icon {
+  fill: #666666;
+}
+
+.footer-copyright__link:hover .footer-copyright__icon,
+.footer-copyright__link:active .footer-copyright__icon {
   fill: $green;
 }
 
-.footer-copyright__link svg {
+.footer-copyright__link .footer-copyright__icon {
   transform: scale(1.5);
 }
 
