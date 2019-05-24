@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
     <svg style="display:none">
@@ -82,7 +83,7 @@
                 </tr>
               </table>
             </div>
-            <button class="catalog__item-button button" type="button">Заказать</button>
+            <a class="catalog__item-button button" href="order.html">Заказать</a>
           </li>
           <li class="catalog__item">
             <a href="product2.html">
@@ -115,7 +116,7 @@
                 </tr>
               </table>
             </div>
-            <button class="catalog__item-button button" type="button">Заказать</button>
+            <a class="catalog__item-button button" href="order.html">Заказать</a>
           </li>
           <li class="catalog__item">
             <a href="product3.html">
@@ -148,7 +149,7 @@
                 </tr>
               </table>
             </div>
-            <button class="catalog__item-button button" type="button">Заказать</button>
+            <a class="catalog__item-button button" href="order.html">Заказать</a>
           </li>
           <li class="catalog__item">
             <a href="product4.html">
@@ -181,7 +182,7 @@
                 </tr>
               </table>
             </div>
-            <button class="catalog__item-button button" type="button">Заказать</button>
+            <a class="catalog__item-button button" href="order.html">Заказать</a>
           </li>
           <li class="catalog__item">
             <a href="product5.html">
@@ -214,7 +215,7 @@
                 </tr>
               </table>
             </div>
-            <button class="catalog__item-button button" type="button">Заказать</button>
+            <a class="catalog__item-button button" href="order.html">Заказать</a>
           </li>
           <li class="catalog__item">
             <a href="product6.html">
@@ -247,7 +248,7 @@
                 </tr>
               </table>
             </div>
-            <button class="catalog__item-button button" type="button">Заказать</button>
+            <a class="catalog__item-button button" href="order.html">Заказать</a>
           </li>
           <li class="catalog__item">
             <a href="product7.html">
@@ -280,14 +281,14 @@
                 </tr>
               </table>
             </div>
-            <button class="catalog__item-button button" type="button">Заказать</button>
+            <a class="catalog__item-button button" href="order.html">Заказать</a>
           </li>
           <li>
             <div class="catalog-all">
               <svg class="catalog-all__icon" width="30" height="30"><use xlink:href="#icon-plus"></use></svg>
               <h3 class="catalog-all__title">Показать еще 100500 товаров</h3>
               <p class="catalog-all__text">На самом деле вкусов гораздо больше!</p>
-              <button class="catalog-all__button button" type="button">Показать все</button>
+              <a class="catalog-all__button button" href="catalog-all.html">Показать все</a>
             </div>
           </li>
         </ul>
@@ -303,7 +304,7 @@
                   <span class="extra__quantity">1 упаковка (100 г)</span>
                   <span class="extra__price">200 Р.</span>
                 </div>
-                <button class="extra__button button" type="button">Заказать</button>
+                <a class="extra__button button" href="order.html">Заказать</a>
               </li>
               <li class="extra__item">
                 <h3 class="extra__title">Питьевая вода</h3>
@@ -311,7 +312,7 @@
                   <span class="extra__quantity">5 литров</span>
                   <span class="extra__price">50 Р.</span>
                 </div>
-                <button class="extra__button button" type="button">Заказать</button>
+                <a class="extra__button button" href="order.html">Заказать</a>
               </li>
               <li class="extra__item">
                 <h3 class="extra__title">Молоко</h3>
@@ -319,7 +320,7 @@
                   <span class="extra__quantity">1 литр</span>
                   <span class="extra__price">100 Р.</span>
                 </div>
-                <button class="extra__button button" type="button">Заказать</button>
+                <a class="extra__button button" href="order.html">Заказать</a>
               </li>
               <li class="extra__item">
                 <h3 class="extra__title">Витамины</h3>
@@ -327,7 +328,7 @@
                   <span class="extra__quantity">1 упаковка (30 г)</span>
                   <span class="extra__price">300 Р.</span>
                 </div>
-                <button class="extra__button button" type="button">Заказать</button>
+                <a class="extra__button button" href="order.html">Заказать</a>
               </li>
             </ul>
           </div>
@@ -380,20 +381,5 @@
         </div>
       </div>
     </footer>
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navButton = document.querySelector('.main-nav__button');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navButton.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-        } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
+    <script src="js/script.js"></script>
   </body>
