@@ -20,8 +20,7 @@
 
 .catalog__title {
   width: 80px;
-  margin: 0;
-  margin-bottom: 11px;
+  margin: 0 0 11px 0;
 
   @include oswald-regular(16px, 20px, $black);
   @include uppercase();

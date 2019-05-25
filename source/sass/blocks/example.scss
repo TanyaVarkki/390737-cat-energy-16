@@ -6,8 +6,7 @@
 }
 
 .example__title {
-  margin: 0;
-  margin-bottom: 22px;
+  margin: 0 0 22px 0;
 
   @include oswald-regular(36px, 60px, $black);
 }
@@ -143,8 +142,8 @@
   }
 
   .example__info {
-    padding: 0 30px;
     margin-bottom: 228px;
+    padding: 0 30px;
   }
 
   .example__numbers {
