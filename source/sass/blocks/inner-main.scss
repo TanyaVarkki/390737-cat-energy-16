@@ -19,9 +19,9 @@
   }
 
   .inner-main__title {
-    padding: 0 30px;
     margin-top: 55px;
     margin-bottom: 95px;
+    padding: 0 30px;
 
     @include oswald-regular(60px, 60px, $black);
 

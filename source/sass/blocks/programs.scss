@@ -6,10 +6,7 @@
 
 .programs__item {
   margin-bottom: 19px;
-  padding-top: 31px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 21px;
+  padding: 31px 20px 21px 20px;
 
   background-color: $light-grey;
 }
@@ -115,10 +112,7 @@
 
   .programs__item {
     margin-bottom: 30px;
-    padding-top: 75px;
-    padding-left: 52px;
-    padding-right: 284px;
-    padding-bottom: 62px;
+    padding: 75px 284px 62px 52px;
   }
 
   .programs__item--pro {

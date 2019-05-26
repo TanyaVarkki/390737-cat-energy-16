@@ -40,6 +40,16 @@
   }
 }
 
+.footer-contacts__map iframe {
+  position: relative;
+
+  top: 0;
+  left: 0;
+
+  width: 320px;
+  height: 362px;
+}
+
 @media (min-width: $tablet-width) {
   .footer-contacts__block {
     padding: 64px 72px 55px;
@@ -76,6 +86,11 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/map-pin.png"), url("../img/bg-map-tablet@2x.png");
   }
+
+  .footer-contacts__map iframe {
+    width: 767px;
+    height: 400px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -94,6 +109,8 @@
     padding: 64px 76px 55px;
 
     background-color: $white;
+
+    z-index: 2;
   }
 
   .footer-contacts__map {
@@ -107,6 +124,10 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/map-pin.png"), url("../img/bg-map-desktop@2x.png");
     }
+  }
+
+  .footer-contacts__map iframe {
+    width: 1440px;
   }
 
   .footer-contacts__address {
