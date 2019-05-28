@@ -2,9 +2,9 @@
 @import "variables.scss";
 @import "mixins.scss";
 // базовые стили
-@import "blocks/base.scss";
+@import "base.scss";
 // кнопки
-@import "blocks/buttons.scss";
+@import "blocks/button.scss";
 // хедер главной
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
@@ -16,10 +16,6 @@
 @import "blocks/example.scss";
 // футер
 @import "blocks/page-footer.scss";
-@import "blocks/footer-contacts.scss";
-@import "blocks/footer-logo.scss";
-@import "blocks/footer-social.scss";
-@import "blocks/footer-copyright.scss";
 // содержание каталога
 @import "blocks/inner-main.scss";
 @import "blocks/catalog.scss";
