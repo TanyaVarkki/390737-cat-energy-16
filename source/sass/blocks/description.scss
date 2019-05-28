@@ -9,8 +9,6 @@
 }
 
 .description__list {
-  margin-left: 20px;
-
   @include list-style();
 }
 
@@ -18,6 +16,8 @@
   position: relative;
 
   margin-bottom: 16px;
+  margin-left: 20px;
+  margin-right: 20px;
   padding: 4px 0 6px 80px;
 }
 
@@ -82,13 +82,14 @@
 
 @media (min-width: $tablet-width) {
   .description {
-    padding: 14px 30px 17px;
+    padding: 14px 0 17px;
 
     border-bottom: 1px solid $border-color;
   }
 
   .description__title {
     margin-bottom: 24px;
+    margin-left: 30px;
 
     @include oswald-regular(60px, 60px, $black);
   }
@@ -104,7 +105,7 @@
 
     width: 324px;
     padding: 116px 0 50px 0;
-    margin: 45px 0 34px;
+    margin: 45px 30px 34px 30px;
   }
 
   .description__item::before {
@@ -141,7 +142,7 @@
   }
 
   .description__text {
-    width: 245px;
+    width: 200px;
 
     font-size: 16px;
     line-height: 24px;
@@ -150,9 +151,12 @@
 
 @media (min-width: $desktop-width) {
   .description {
-    padding: 0 110px;
-
+    padding: 0;
     border: none;
+  }
+
+  .description__title {
+    margin-left: 30px;
   }
 
   .description__item {

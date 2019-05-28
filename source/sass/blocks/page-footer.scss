@@ -31,7 +31,7 @@
 }
 
 .page-footer__contacts-map {
-  width: 320px;
+  width: 100%;
   height: 400px;
 
   background-image: url("../img/map-pin.png"), url("../img/bg-map-mobile@1x.png");
@@ -50,7 +50,7 @@
   top: 0;
   left: 0;
 
-  width: 320px;
+  width: 100%;
   height: 362px;
 
   border: none;
@@ -160,11 +160,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer {
-    width: 768px;
-    margin: 0 auto;
-  }
-
   .page-footer__contacts-block {
     padding: 64px 72px 55px;
   }
@@ -189,8 +184,6 @@
   }
 
   .page-footer__contacts-map {
-    width: 767px;
-
     background-image: url("../img/map-pin.png"), url("../img/bg-map-tablet@1x.png");
     background-size: 113px 106px, 767px 400px;
     background-repeat: no-repeat, no-repeat;
@@ -202,16 +195,19 @@
   }
 
   .page-footer__contacts-map iframe {
-    width: 767px;
     height: 400px;
   }
 
   .page-footer__grey {
+    padding: 0;
+  }
+
+  .page-footer__grey .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: 42px 30px;
+    padding: 42px 0;
   }
 
   .page-footer__logo {
@@ -219,6 +215,7 @@
     align-items: center;
 
     width: 236px;
+    margin: 0 auto 0 30px;
     padding: 9px 0 0 0;
 
     border: none;
@@ -236,6 +233,7 @@
     box-sizing: border-box;
 
     width: 236px;
+    margin: 0 30px 0 auto;
     padding: 0 0 0 72px;
 
     border: none;
@@ -243,11 +241,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer {
-    width: 1440px;
-    margin: 0 auto;
-  }
-
   .page-footer__contacts {
     position: relative;
   }
@@ -268,20 +261,14 @@
   }
 
   .page-footer__contacts-map {
-    width: 1440px;
-
     background-image: url("../img/map-pin.png"), url("../img/bg-map-desktop@1x.png");
-    background-size: 113px 106px, 1440px 400px;
+    background-size: 113px 106px, 1280px 400px;
     background-repeat: no-repeat, no-repeat;
     background-position: 1002px 50%, center;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/map-pin.png"), url("../img/bg-map-desktop@2x.png");
     }
-  }
-
-  .page-footer__contacts-map iframe {
-    width: 1440px;
   }
 
   .page-footer__contacts-address {
@@ -291,7 +278,7 @@
   }
 
   .page-footer__grey {
-    padding: 42px 98px;
+    padding: 0;
   }
 
   .page-footer__logo {

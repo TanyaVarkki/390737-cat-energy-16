@@ -46,13 +46,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav {
-    box-sizing: border-box;
-
-    width: 50%;
-    padding-left: 130px;
-  }
-
   .main-nav__list {
     width: 482px;
   }

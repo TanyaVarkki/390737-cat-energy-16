@@ -105,12 +105,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .programs {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
   .programs__item {
+    width: 708px;
     margin-bottom: 30px;
     padding: 75px 353px 62px 52px;
   }
@@ -155,6 +151,8 @@
   }
 
   .programs__item-text {
+    padding-right: 0;
+
     font-size: 16px;
     line-height: 24px;
   }
@@ -174,11 +172,13 @@
 }
 
 @media (min-width: $desktop-width) {
-  .programs {
+  .programs .container {
+    box-sizing: border-box;
+
     display: flex;
     justify-content: space-between;
 
-    padding: 0 110px;
+    width: 1220px;
     margin-bottom: 78px;
   }
 
